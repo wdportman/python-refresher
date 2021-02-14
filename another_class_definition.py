@@ -16,5 +16,6 @@ class Bat:
 
 if __name__ == '__main__':
     b = Bat()
-    print(b.say('hello'))
-    print(b.fly)
+    print(b.say('bye'))
+    print(not b.fly)
+    print(b.sonar())
