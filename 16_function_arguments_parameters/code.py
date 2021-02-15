@@ -12,7 +12,7 @@ def say_hello():
     print("Hello!")
 
 
-say_hello("Bob")  # Error
+say_hello()  # Error
 
 # -- But if you add a parameter, then you must give it an argument --
 
@@ -22,7 +22,7 @@ def say_hello(name):
 
 
 say_hello("Bob")
-say_hello()  # Error, needs an argument
+say_hello("Will")  # Error, needs an argument
 
 # -- Keyword arguments --
 # To make things clearer, in Python you can give keyword arguments.
