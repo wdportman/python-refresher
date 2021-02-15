@@ -9,6 +9,7 @@ def multiply(*args):
 
 print(multiply(3, 5))
 print(multiply(-1))
+print(multiply(2,3,4))
 
 # The asterisk takes all the arguments and packs them into a tuple.
 # The asterisk can be used to unpack sequences into arguments too!
@@ -31,7 +32,7 @@ def add(x, y):
 
 nums = {"x": 15, "y": 25}
 
-print(add(**nums))
+print("Hi", add(**nums))
 
 # -- Forced named parameter --
 
@@ -54,4 +55,4 @@ def apply(*args, operator):
 
 
 print(apply(1, 3, 6, 7, operator="+"))
-print(apply(1, 3, 5, "+"))  # Error
+print(apply(1, 3, 5, operator="+"))  # Error
