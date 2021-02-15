@@ -44,3 +44,9 @@ print(list(doubled))
 # They are used to return a value calculated from its parameters.
 # Almost always single-line, so don't do anything complicated in them.
 # Very often better to just define a function and give it a proper name.
+
+tripled = map(lambda x: x * 3, sequence)
+print(list(tripled))
+
+subtract_five = lambda x: x-5
+print(subtract_five(6))
