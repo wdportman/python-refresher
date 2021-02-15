@@ -3,7 +3,7 @@ def named(**kwargs):
     print(kwargs)
 
 
-named(name="Bob", age=25)
+named(name="Bob", age=25, status=True)
 # named({"name": "Bob", "age": 25})  # Error, the dictionary is actually a positional argument.
 
 # Unpack dict into arguments. This is OK, but slightly more confusing. Good when working with variables though.
@@ -18,7 +18,7 @@ def named(**kwargs):
 def print_nicely(**kwargs):
     named(**kwargs)  # Unpack the dictionary into keyword arguments.
     for arg, value in kwargs.items():
-        print(f"{arg}: {value}")
+        print(f"Hi, {arg}: {value}")
 
 
 print_nicely(name="Bob", age=25)
@@ -51,5 +51,5 @@ def myfunction(**kwargs):
     print(kwargs)
 
 
-myfunction(**"Bob")  # Error, must be mapping
+myfunction(name="Bob", age=72)  # Error, must be mapping
 myfunction(**None)  # Error
