@@ -10,7 +10,7 @@ userid_mapping = {user[0]: user for user in users}
 
 print(username_mapping)
 
-print(username_mapping["Bob"])  # (0, "Bob", "password")
+# print(username_mapping["Bob"])  # (0, "Bob", "password")
 
 # -- Can be useful to log in for example --
 
